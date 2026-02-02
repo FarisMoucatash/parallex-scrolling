@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #001f3f;
+    color: white;
+    overflow-x: hidden;
+}
+
+.ocean-hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #000000;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 20px #00aaff;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.layer-bg {
+    background-image: linear-gradient(to bottom, #0074D9, #001f3f, #000000);
+    z-index: 1;
+}
+
+.layer-mid {
+    background-image: url('https://via.placeholder.com/1920x1080/transparent/FFFFFF?text=Mid-Ground+Ruins'); 
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.layer-front {
+    background-image: linear-gradient(to top, #000 10%, transparent 60%);
+    z-index: 3;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    background: #000;
+    padding-bottom: 100px;
+}
+
+.text-box {
+    padding: 10rem 20% 10rem 20%;
+    font-size: 1.5rem;
+    line-height: 2;
+    background: linear-gradient(to bottom, transparent, #000 20%);
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    z-index: 20;
+}
+
+.bubble-1 { width: 60px; height: 60px; left: 10%; top: 100px; }
+.bubble-2 { width: 100px; height: 100px; left: 80%; top: 300px; }
+.bubble-3 { width: 40px; height: 40px; left: 30%; top: 500px; }
+.bubble-4 { width: 80px; height: 80px; left: 60%; top: 700px; }
+.bubble-5 { width: 50px; height: 50px; left: 15%; top: 900px; }
